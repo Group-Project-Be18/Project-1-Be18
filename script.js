@@ -156,9 +156,11 @@ function addFavorite(id) {
   })
     .then((response) => response.json())
     .then((data) => {
+            alert("Favorit berhasil ditambahkan");
       console.log("Sukses: ", data);
     })
     .catch((error) => {
+            alert("Favorit gagal ditambahkan");
       console.log("error: ", data);
     });
 }
